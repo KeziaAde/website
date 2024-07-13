@@ -1,0 +1,121 @@
+/* NAV */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, var(--mhg), transparent);
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: var(--header);
+  margin: 1rem 1.5rem;
+}
+
+.navMini {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: relative;
+  height: var(--header);
+  margin: 1rem 1.5rem;
+}
+
+.navLogo > img {
+  height: 50px;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  float: right;
+}
+
+.navListWeb {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+a.navLink.active {
+  text-decoration: underline !important;
+  color: var(--pink);
+}
+
+.navLink {
+  font-weight: 600;
+  transition: color 0.1s;
+}
+
+.navLink:hover {
+  color: var(--pink);
+}
+
+.navToggle,
+.navClose {
+  font-size: 1.5rem;
+  color: var(--pale);
+}
+
+.showMenu {
+  backdrop-filter: blur(20px);
+  padding: 10px 0 0 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 30vw;
+  text-align: left;
+}
+
+.hideMenu {
+  display: none;
+}
+
+/* FOOTER */
+.footerContainer {
+  width: 100vw;
+  font-size: var(--small);
+  min-height: var(--footer);
+  background-color: var(--grey);
+  color: var(--white);
+  position: fixed;
+  bottom: 0;
+}
+
+.footerWrapper {
+  max-width: 1260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+a.footerContainer:hover {
+  color: var(--pink);
+}
+
+.footerIcon {
+  color: var(--white);
+}

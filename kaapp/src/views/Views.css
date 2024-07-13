@@ -1,0 +1,121 @@
+/* HOME */
+.homeDiv {
+  margin: 1rem 3rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.homeLogo {
+  width: 300px;
+}
+
+.homeInfo {
+  background-color: var(--white);
+  width: 500px;
+  height: 400px;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.homeInfo > p {
+  color: var(--grey);
+  font-size: var(--small);
+}
+
+.homeInfo > h4 {
+  color: var(--blue);
+  font-size: var(--big);
+}
+
+/* ABOUT */
+.aboutMeContainer {
+  width: 100%;
+  font-family: var(--font);
+  color: var(--white);
+  font-size: var(--small);
+}
+
+.aboutMe > h4 {
+  color: var(--pale);
+  font-size: var(--big);
+}
+
+.aboutMe {
+  background: linear-gradient(90deg, var(--blue) 50%, var(--mhg) 50%);
+  width: 500px;
+  height: 400px;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+ul.aboutMeList {
+  list-style: square;
+  text-align: left;
+}
+
+li.aboutMeList {
+  padding-inline-start: 5px;
+  padding-bottom: 5px;
+}
+
+li.aboutMeList::marker {
+  color: var(--pale);
+}
+
+/* WORK */
+.workInfo {
+  background: radial-gradient(var(--blue), var(--pale));
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.workInfo > h4 {
+  color: var(--white);
+  font-size: var(--big);
+}
+
+button {
+  padding: 10px;
+  color: var(--blue);
+  font-size: var(--small);
+  background-color: var(--pink);
+  border: none;
+  border-radius: 5px;
+}
+
+/* CONTACT */
+.contactWrapper {
+  opacity: 50%;
+  width: 100%;
+}
+
+.contactInfo {
+  background: var(--pale);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--blue);
+  margin: 0 auto;
+}
+
+.contactInfo > h4 {
+  color: var(--mhg);
+  font-size: var(--big);
+}

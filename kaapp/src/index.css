@@ -1,0 +1,70 @@
+/* CONTENT */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+ 
+ @font-face {
+   font-family: AbrilFatface;
+   src: local("AbrilFatface"),
+    url("./Logo/AbrilFatface-Regular.ttf") format("truetype");
+ }
+ 
+ :root {
+  --pink: #D73964;
+  --pale: #FFB3CB;
+  --mhg: #2C1A1D;
+  --blue: #5DB7DE;
+  --grey: #3A3335;
+  --white: #FFFFFF;
+  --black: #000000;
+  --font: "AbrilFatface", sans-serif;
+  --big: 1.25rem;
+  --small: 0.813rem;
+  --header: 3.5rem;
+  --footer: 2rem;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+ }
+ 
+ ul {
+  list-style: none;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: var(--pale);
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23471820" d="M22 11c-4.96 0-9-4.04-9-9 0-1.32-2-1.32-2 0 0 4.96-4.04 9-9 9-1.32 0-1.32 2 0 2 4.96 0 9 4.04 9 9 0 1.32 2 1.32 2 0 0-4.96 4.04-9 9-9 1.32 0 1.32-2 0-2Z"></path></svg>'), default;
+ }
+ 
+ a:hover, a:active {
+   color: var(--pink);
+  }
+ 
+ html, body {
+   background: linear-gradient(90deg, var(--mhg) 50%, var(--blue) 50%);
+   font-family: var(--font) !important;
+   max-width: 1260px;
+   text-align: center;
+   padding: 4.5rem 0;
+   margin: 0;
+   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23F0DFF0" stroke="%23471820" stroke-width="1" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z"></path></svg>'), default;
+ }
+
+ /* SCROLL */
+ ::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--grey); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--pink); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pale); 
+}
